@@ -68,7 +68,7 @@
     height: 6
   - title: Top Accounts by Closed Cases
     name: Top Accounts by Closed Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, case_management.count_caseId]
@@ -129,7 +129,7 @@
     height: 6
   - title: Top Accounts with Escalated Cases
     name: Top Accounts with Escalated Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, case_management.count_caseId]
@@ -191,7 +191,7 @@
     height: 6
   - title: Top Accounts by Open Cases Age (Days)
     name: Top Accounts by Open Cases Age (Days)
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, avg_case_age_days]
@@ -256,7 +256,7 @@
     height: 6
   - title: New Tile
     name: New Tile
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.count_caseId]
@@ -291,7 +291,7 @@
     height: 2
   - title: New Tile
     name: New Tile (2)
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [open_cases, case_management.count_caseId]
@@ -342,7 +342,7 @@
     height: 2
   - title: 'Total # Closed Cases'
     name: 'Total # Closed Cases'
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [closed_cases, case_management.count_caseId]
@@ -414,7 +414,7 @@
     height: 2
   - title: Navigation Bar
     name: Navigation Bar
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.dash_nav]
@@ -439,7 +439,7 @@
     height: 2
   - title: Top Accounts With High Priority Open Cases
     name: Top Accounts With High Priority Open Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, count_of_high_priority_cases]
@@ -542,7 +542,7 @@
     height: 6
   - title: Top Accounts With Unassigned Open Cases
     name: Top Accounts With Unassigned Open Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, count_of_unassigned_open_cases]
@@ -629,7 +629,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_created_date
@@ -642,7 +642,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.billing_country
@@ -655,7 +655,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.industry
@@ -668,7 +668,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_owner_name
@@ -681,7 +681,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.account_name
@@ -694,7 +694,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_type
@@ -707,7 +707,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_origin
