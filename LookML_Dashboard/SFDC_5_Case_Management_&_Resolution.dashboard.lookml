@@ -93,7 +93,7 @@
     height: 7
   - title: Top Agents (No of Closed Cases)
     name: Top Agents (No of Closed Cases)
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_column
     fields: [low_priority_closed_cases, medium_priority_closed_cases, high_priority_closed_cases,
@@ -188,7 +188,7 @@
     height: 7
   - title: Case Resolution Count by Priority Trend
     name: Case Resolution Count by Priority Trend
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_column
     fields: [case_management.case_closed_month, low_priority_closed_cases, medium_priority_closed_cases,
@@ -273,7 +273,7 @@
     height: 5
   - title: Top Agents (No of Open Cases)
     name: Top Agents (No of Open Cases)
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_column
     fields: [low_priority_open_cases, medium_priority_open_cases, high_priority_open_cases,
@@ -369,7 +369,7 @@
     height: 7
   - title: Status of Open Cases by Agent
     name: Status of Open Cases by Agent
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.case_owner_name, case_management.case_number, case_management.case_created_date,
@@ -435,7 +435,7 @@
     height: 9
   - title: Avg Case Resolution Time
     name: Avg Case Resolution Time
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [avg_case_resolution_time]
@@ -490,7 +490,7 @@
     height: 2
   - title: Avg Case Resolution Time - High Priority
     name: Avg Case Resolution Time - High Priority
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [avg_case_resolution_time]
@@ -546,7 +546,7 @@
     height: 2
   - title: New Tile
     name: New Tile
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.dash_nav]
@@ -601,7 +601,7 @@
     height: 1
   - title: Avg No Cases Handled per Agent
     name: Avg No Cases Handled per Agent
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.count_caseId, case_management.count_Owner, count_cases_not_in_group,
@@ -659,7 +659,7 @@
     height: 1
   - title: Avg Case Resolution Time by Priority Trend
     name: Avg Case Resolution Time by Priority Trend
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_area
     fields: [avg_case_duration_all_cases, avg_case_duration_high_priority, avg_case_duration_medium_priority,
@@ -762,7 +762,7 @@
     height: 5
   - title: Open Cases By Status
     name: Open Cases By Status
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_pie
     fields: [case_management.case_status, open_cases]
@@ -830,7 +830,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_created_date
@@ -843,7 +843,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.billing_country
@@ -856,7 +856,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.industry
@@ -869,7 +869,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_origin
@@ -882,7 +882,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_type
@@ -895,7 +895,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_owner_name
@@ -908,7 +908,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: [Industry]
     field: case_management.account_name

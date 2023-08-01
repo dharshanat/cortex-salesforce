@@ -42,7 +42,7 @@
     height: 2
   - title: Total Open Cases
     name: Total Open Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [open_cases, case_management.count_caseId]
@@ -93,7 +93,7 @@
     height: 2
   - title: High Priority Open Cases
     name: High Priority Open Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [high_priority_open_cases, case_management.count_caseId]
@@ -138,7 +138,7 @@
     height: 2
   - title: Open Cases by Priority
     name: Open Cases by Priority
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_column
     fields: [case_management.case_created_month, low_priority, medium_priority, high_priority]
@@ -228,7 +228,7 @@
     height: 5
   - title: Open Cases by Type
     name: Open Cases by Type
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_pie
     fields: [case_management.case_type, open_cases]
@@ -272,7 +272,7 @@
     height: 5
   - title: Cases by Channel Trend
     name: Cases by Channel Trend
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_area
     fields: [case_management.case_created_month, case_management.case_origin, case_management.count_caseId]
@@ -351,7 +351,7 @@
     height: 5
   - title: Link to dashboards
     name: Link to dashboards
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.dash_nav]
@@ -416,7 +416,7 @@
     height: 2
   - title: All Open Cases by Priority, Age & Status
     name: All Open Cases by Priority, Age & Status
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.case_number, case_management.account_name, case_management.priority,
@@ -514,7 +514,7 @@
     height: 6
   - title: Total Unassigned Cases
     name: Total Unassigned Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [unassigned_cases, open_cases]
@@ -567,7 +567,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_created_date
@@ -580,7 +580,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.billing_country
@@ -593,7 +593,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.industry
@@ -606,7 +606,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_origin
@@ -619,7 +619,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_type
@@ -632,7 +632,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: []
     field: case_management.case_owner_name
@@ -645,7 +645,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     listens_to_filters: [Industry]
     field: case_management.account_name
