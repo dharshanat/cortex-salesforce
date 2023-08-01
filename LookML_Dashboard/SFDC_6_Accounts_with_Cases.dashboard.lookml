@@ -7,7 +7,7 @@
   elements:
   - title: Top Accounts by Open Cases
     name: Top Accounts by Open Cases
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_grid
     fields: [case_management.account_id, case_management.account_name, case_management.count_caseId]

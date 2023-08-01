@@ -48,6 +48,11 @@ view: case_management {
     sql: ${TABLE}.AccountOwnerName ;;
   }
 
+  dimension: account_ownership {
+    type: string
+    sql: ${TABLE}.AccountOwnership ;;
+  }
+
   dimension: account_phone {
     type: string
     sql: ${TABLE}.AccountPhone ;;

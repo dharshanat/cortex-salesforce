@@ -7,7 +7,7 @@
   elements:
   - title: Top Agents by Fastest Avg Resolution Time
     name: Top Agents by Fastest Avg Resolution Time
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: looker_bar
     fields: [avg_case_resolution_time_days, count_of_high_priority_cases, case_management.case_owner_name]

@@ -1,22 +1,15 @@
 
 constant: CONNECTION_NAME {
-  value: "cortex"
+  value: "cortex-sf-dt"
   export: override_required
 }
-
 
 constant: GCP_PROJECT {
-  value: "GCP Project Name"
+  value: "dharshana-sandpit"
   export: override_required
 }
-
 
 constant: SFDC_DATASET {
-  value: "Reporting Dataset Name"
+  value: "REPORTING_SFDC"
   export: override_required
 }
-
-
-
-
-

@@ -7,7 +7,7 @@
   elements:
   - title: Total Cases Created
     name: Total Cases Created
-    model: cortex_salesforce
+    model: cortex_salesforce_dt
     explore: case_management
     type: single_value
     fields: [case_management.count_caseId]

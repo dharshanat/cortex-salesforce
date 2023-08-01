@@ -12,7 +12,7 @@ include: "/views/**/*.view"
 
 datagroup: cortex_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "1 minute"
 }
 
 persist_with: cortex_default_datagroup
@@ -131,4 +131,3 @@ explore: sales_activities_engagement_opportunity_pipeline {
 }
 
 #********************************************************************************************************#
-
